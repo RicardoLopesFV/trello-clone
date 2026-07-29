@@ -1,0 +1,21 @@
+╭─────────────────────────────────────────────────────────────────────────────╮
+│ // DOMAIN MODEL KANBAN (Front-end Data Structure)                           │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Board {                                                                     │
+│   id: String (UUID)                                                         │
+│   title: String                                                             │
+│ }                                                                           │
+│                                                                             │
+│ Column {                                                                    │
+│   id: String (UUID)                                                         │
+│   board_id: String (Referência ao Quadro pai)                               │
+│   title: String                                                             │
+│ }                                                                           │
+│                                                                             │
+│ Card {                                                                      │
+│   id: String (UUID)                                                         │
+│   column_id: String (Referência à Coluna pai)                               │
+│   content: String                                                           │
+│   position: Number (Índice visual para o drag and drop)                     │
+│ }                                                                           │
+╰─────────────────────────────────────────────────────────────────────────────╯
