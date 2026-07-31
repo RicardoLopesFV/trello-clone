@@ -1,3 +1,12 @@
+import { Header } from "./layouts/Header/Header";
+import { Board } from "./features/Board/Board";
+import "./styles/App.scss";
+
 export const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <div className="container">
+      <Header />
+      <Board />
+    </div>
+  );
 };
