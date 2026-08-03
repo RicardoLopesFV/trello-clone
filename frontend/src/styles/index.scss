@@ -1,3 +1,33 @@
+@use "variables";
+
+@font-face {
+  font-family: "Atlassian Sans";
+  src: url("../assets/fonts/AtlassianSans.v3.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atlassian Mono";
+  src: url("../assets/fonts/AtlassianMono.v2.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atlassian Mono";
+  src: url("../assets/fonts/AtlassianMonoItalic.v2.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Atlassian Sans";
+  src: url("../assets/fonts/AtlassianSansItalic.v3.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +37,11 @@
 body {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }

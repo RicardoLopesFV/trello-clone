@@ -1,5 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/index.scss";
+
 .header {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  padding: 0.5rem 0rem;
+  background-color: var(--nav-bg);
+
+  &__nav,
+  &__search-div,
+  &__list {
+    display: flex;
+  }
+
+  &__nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand-name {
+    color: var(--subtext);
+  }
+
+  &__search-div {
+    max-width: 820px;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  &__input-search {
+    max-width: 760px;
+    width: 100%;
+    padding: 0.3rem 1.5rem;
+  }
+
+  &__btn-create {
+    padding: 0 1rem;
+    border: none;
+  }
+
+  &__list {
+    gap: 2rem;
+  }
+
+  &__list-icons {
+    list-style: none;
+  }
 }

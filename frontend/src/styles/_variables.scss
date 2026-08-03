@@ -1,0 +1,38 @@
+:root {
+  /* =========================================
+     1. PALETA BASE (Trello Dark Mode)
+     ========================================= */
+  /* Fundos e Estruturas */
+  --nav-bg: #1d2125; /* Fundo da Navbar superior e modais */
+  --list-bg: #101204; /* Fundo quase preto das Colunas (Listas) */
+  --card-bg: #22272b; /* Fundo dos Cartões */
+  --card-hover: #2c333a; /* Efeito de hover nos cartões */
+  --overlay-light: rgba(255, 255, 255, 0.16); /* Fundo translúcido (Botão Add List) */
+  --overlay-dark: rgba(0, 0, 0, 0.16); /* Overlay do Header do Board */
+
+  /* Cores Vibrantes (Acentos para Botões e Tags) */
+  --blue: #579dff; /* Botão primário "Create" */
+  --green: #4bce97; /* Tag/Label de sucesso */
+  --yellow: #e2b203; /* Tag/Label de aviso */
+  --red: #f87462; /* Tag/Label de erro ou exclusão */
+  --purple: #9f8fef; /* Tag/Label roxa */
+
+  /* Textos */
+  --text: #b6c2cf; /* Texto principal */
+  --text-dark: #1d2125; /* Texto invertido (dentro do botão azul) */
+  --subtext: #8c9bab; /* Texto secundário e ícones */
+
+  /* =========================================
+     2. MAPEAMENTO SEMÂNTICO
+     ========================================= */
+  /* Fundo do Quadro (Board) - Gradiente Roxo/Rosa */
+  --board-bg: linear-gradient(135deg, #44275d 0%, #995c7f 100%);
+
+  /* Estrutura Kanban */
+  --column-bg: var(--list-bg);
+  --card-bg-color: var(--card-bg);
+
+  /* Botões */
+  --btn-primary-bg: var(--blue);
+  --btn-primary-text: var(--text-dark);
+}

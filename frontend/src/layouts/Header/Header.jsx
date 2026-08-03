@@ -4,11 +4,17 @@ export const Header = () => {
   return (
     <header className="header">
       {/* Brand Icon */}
-      <h2 className="header__brand-name">Kanban Board</h2>
-      <nav className="header__nav">
+      <nav className="header__nav container">
+        <h2 className="header__brand-name">Trello</h2>
         <div className="header__search-div">
-          <input className="header__input-search" type="search" name="search" id="search" />
-          <button className="header__button-create">create</button>
+          <input
+            className="header__input-search"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="search"
+          />
+          <button className="header__btn-create">create</button>
         </div>
         <ul className="header__list">
           <li className="header__list-icons">notifications</li>
